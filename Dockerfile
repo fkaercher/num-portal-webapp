@@ -1,13 +1,18 @@
 ### STAGE 1: Build ###
 FROM node:20.14-alpine AS build
-WORKDIR /usr/src/app
+ENV HOME=/usr/src/app
+WORKDIR $HOME
+RUN mkdir -p $HOME
 
 # Install gettext for envsubst
 RUN apk add -i gettext
 
-COPY . .
+ADD package.json $HOME
+ADD package-lock.json $HOME
 RUN npm install
 ARG ENVIRONMENT=deploy
+
+COPY . $HOME
 RUN npm run build -- num-portal-webapp --configuration=${ENVIRONMENT}
 ARG env_name
 ARG api_baseUrl
