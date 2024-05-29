@@ -1,6 +1,5 @@
 {
-  "name": "NUM RDP",
-  "short_name": "RDP",
+  "name": "Cohort Explorer",
   "icons": [
     {
       "src": "/assets/favicons/android-chrome-192x192.png",

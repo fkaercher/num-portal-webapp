@@ -11,10 +11,10 @@
     "clientId": "num-portal-webapp"
   },
   "legal": {
-    "copyrightOwner": "2024 NUM Routinedatenplattform | RDP"
+    "copyrightOwner": "2024"
   },
   "welcomePageTitle": {
-    "de": "Willkommen bei NUM RDP - Testumgebung",
-    "en": "Welcome to NUM RDP - Test environment"
+    "de": "Willkommen",
+    "en": "Welcome"
   }
 }

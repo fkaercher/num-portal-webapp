@@ -3,20 +3,8 @@
   "DASHBOARD": {
     "LATEST_PROJECTS": "Neueste Projekte",
     "INTRODUCTION": {
-      "HEADER": "NUM Routinedatenplattform",
+      "HEADER": "",
       "BLOCKS": [
-        {
-          "HEADER": "Einleitung",
-          "BODY": "Das Netzwerk Universitätsmedizin (NUM) betreibt die Routinedatenplattform (RDP): Eine sichere, erweiterbare und interoperable Plattform für die Bereitstellung von Patientendaten der klinischen Routinedokumentation. RDP verbindet Universitätskliniken bundesweit miteinander."
-        },
-        {
-          "HEADER": "Nutzen & Zielsetzung",
-          "BODY": "Um die technische und regulatorische Verfügbarkeit von Versorgungsdaten zu gewährleisten, bietet RDP eine komponentenbasierte, nach industriellen Standards gefertigte Plattform zur Übertragung, Zusammenführung, Speicherung und Analyse klinischer Daten. RDP ermöglicht Kliniken die standardisierte und sichere Übermittlung der Versorgungsdaten. Es befähigt weiter deren Nutzung entlang fachspezifischer Szenarien, welche sowohl die wissenschaftliche Forschung als auch die evidenzbasierte Steuerung gesundheitspolitischer Entscheidungen unterstützt."
-        },
-        {
-          "HEADER": "Die Routinedatenplattform, RDP",
-          "BODY": "<ul><li>Entspricht den FAIR-Prinzipien für Forschungsdaten</li><li>Implementiert die Ethik- und Datenschutz-rechtlichen Grundlagen zur Beantragung und Nutzung klinischer Routinedaten</li><li>Verwendet offene technische Standards und ist auf der Grundlage offener Spezifikationen und austauschbarer Komponenten aufgebaut</li><li>Ermöglicht die Entwicklung neuartiger Anwendungen zur Unterstützung der klinischen Routine, z.B. zur Infektionskontrolle</li><li>Bietet Datenmanagement sowohl für die zentrale Datenhaltung, als auch für (temporäre) Zusammenführung föderierter Daten</li><li>Integriert Daten-Sicherheit und Qualität durch verschlüsselte Übertragung, Pseudonymisierung und Validierung von Terminologie</li><li>Bietet Interoperabilität zum Kerndatensatz-Format der Medizininformatik-Initiative (MII)</li><li>Fördert die Anbindung klinischer Datenintegrationszentren (des NUM, der MII oder anderer) durch Schnittstellen im FHIR und openEHR Standard</li><li>Unterstützt die Integration international abgestimmter Datenmodelle für elektronische Gesundheitsakten (EHR)</li></ul>"
-        }
       ],
       "PARTICIPANTS": "Teilnehmende Kliniken"
     },
@@ -27,8 +15,8 @@
       "HEADER": "Teilnehmende Kliniken"
     },
     "METRICS": {
-      "PROJECTS": "{{count}} Projekte in RDP veröffentlicht",
-      "QUERIES": "{{count}} Kriterien in RDP verfügbar",
+      "PROJECTS": "{{count}} Projekte veröffentlicht",
+      "QUERIES": "{{count}} Kriterien verfügbar",
       "ORGANIZATIONS": "{{count}} teilnehmende Universitätskliniken"
     }
   },
@@ -50,7 +38,7 @@
     }
   },
   "NAVIGATION": {
-    "DASHBOARD": "Willkommen bei RDP",
+    "DASHBOARD": "Startseite",
     "DATA_FILTER": "Datenfilter",
     "PATIENT_FILTER": "Patientenfilter",
     "PROJECTS": "Projekte",
@@ -153,7 +141,7 @@
     "EDIT_INFO_CARDS_HEADER": "Info-Kacheln bearbeiten",
     "EDIT_INFO_CARDS_DESCRIPTION": "Sie können auf der Willkommen-Seite Info-Kacheln einfügen, die Information und einen Link zu einer externen Seite enthalten können.",
     "EDIT_NAVIGATION_ITEMS_HEADER": "Navigationspunkte bearbeiten",
-    "EDIT_NAVIGATION_DESCRIPTION": "Sie können in der Navigation eigene Links hinzufügen, bearbeiten oder löschen. Die Links sollten nur auf andere Webseiten verweisen, die für die Nutzer der RDP von Interesse sein können.",
+    "EDIT_NAVIGATION_DESCRIPTION": "Sie können in der Navigation eigene Links hinzufügen, bearbeiten oder löschen. Die Links sollten nur auf andere Webseiten verweisen, die für die Nutzer von Interesse sein können.",
     "URL_PLACEHOLDER": "Z.B. https://www.domain.com",
     "URL_TEXT_PLACEHOLDER": "Z.B. Uni Beispielstadt",
     "URL_TEXT_LABEL": "Link-Text",
@@ -486,9 +474,9 @@
   },
   "USER_MANAGEMENT": {
     "NEW_USERS_HEADER": "Alle neuen Benutzer",
-    "NEW_USERS_DESCRIPTION": "In der folgenden Liste sehen Sie die neu angemeldeten Nutzer, denen noch keine Rolle zugewiesen wurde.\n\nBitte überprüfen Sie die Nutzer und weisen ihnen eine Rolle zu, damit sie an der RDP teilhaben können.",
+    "NEW_USERS_DESCRIPTION": "In der folgenden Liste sehen Sie die neu angemeldeten Nutzer, denen noch keine Rolle zugewiesen wurde.\n\nBitte überprüfen Sie die Nutzer und weisen ihnen eine Rolle zu, damit sie teilhaben können.",
     "ALL_USERS_HEADER": "Alle genehmigten Benutzer",
-    "ALL_USERS_DESCRIPTION": "In der folgenden Liste sehen Sie alle aktiven Nutzer der RDP. Bei Bedarf können Sie den Nutzern andere Rollen zuweisen oder sie deaktivieren.",
+    "ALL_USERS_DESCRIPTION": "In der folgenden Liste sehen Sie alle aktiven Nutzer. Bei Bedarf können Sie den Nutzern andere Rollen zuweisen oder sie deaktivieren.",
     "EDIT_USER_DIALOG_HEADER": "Benutzer bearbeiten",
     "EDIT_USER_DESCRIPTION": "Der Benutzer wird über die Bestätigung per E-Mail informiert.",
     "ASSIGN_ROLES": "Benutzerrolle(n) zuordnen",
