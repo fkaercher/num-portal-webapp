@@ -5,14 +5,10 @@
     "INTRODUCTION": {
       "HEADER": "",
       "BLOCKS": [
-      ],
-      "PARTICIPANTS": "Teilnehmende Kliniken"
+      ]
     },
     "INFO_CARD": {
       "HEADER": "Info Board"
-    },
-    "PARTICIPATING": {
-      "HEADER": "Teilnehmende Kliniken"
     },
     "METRICS": {
       "PROJECTS": "{{count}} Projekte veröffentlicht",
