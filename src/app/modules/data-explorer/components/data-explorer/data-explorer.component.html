@@ -2,22 +2,6 @@
   <h2>{{ 'DATA_EXPLORER.EXPLORE_PROJECT' | translate }}</h2>
   <p class="num-margin-b-40">{{ 'DATA_EXPLORER.EXPLORE_PROJECT_CONTENT' | translate }}</p>
 
-  <num-project-editor-accordion
-    class="num-margin-b-40"
-    [isResearchersFetched]="isResearchersFetched"
-    [isCohortsFetched]="isCohortsFetched"
-    [isTemplatesDisabled]="isTemplatesDisabled"
-    [isResearchersDisabled]="isResearchersDisabled"
-    [isGeneralInfoDisabled]="isGeneralInfoDisabled"
-    [isCohortBuilderDisabled]="isCohortBuilderDisabled"
-    [showAttachmentsSelect]="false"
-    [isInPreview]="true"
-    [project]="project"
-    [projectForm]="projectForm"
-    [cohortGroup]="cohortGroup"
-    [generalInfoData]="generalInfoData"
-  ></num-project-editor-accordion>
-
   <section role="presentation">
     <h3>{{ 'DATA_EXPLORER.HEADLINE_RETRIEVE_SECTION' | translate }}</h3>
     <p class="num-margin-b-20" *ngIf="!isFilteringDisabled">
@@ -151,6 +135,23 @@
       </div>
     </mat-card>
   </ng-template>
+
+  <mat-divider class="num-d-w--1 num-margin-b-40"></mat-divider>
+  <num-project-editor-accordion
+    class="num-margin-b-40"
+    [isResearchersFetched]="isResearchersFetched"
+    [isCohortsFetched]="isCohortsFetched"
+    [isTemplatesDisabled]="isTemplatesDisabled"
+    [isResearchersDisabled]="isResearchersDisabled"
+    [isGeneralInfoDisabled]="isGeneralInfoDisabled"
+    [isCohortBuilderDisabled]="isCohortBuilderDisabled"
+    [showAttachmentsSelect]="false"
+    [isInPreview]="true"
+    [project]="project"
+    [projectForm]="projectForm"
+    [cohortGroup]="cohortGroup"
+    [generalInfoData]="generalInfoData"
+  ></num-project-editor-accordion>
 
   <mat-divider class="num-d-w--1 num-margin-b-40"></mat-divider>
   <div role="presentation" fxLayout="row" fxLayoutAlign="space-between">
