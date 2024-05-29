@@ -19,14 +19,4 @@
       {{ 'DASHBOARD.METRICS.QUERIES' | translate: { count: metrics.aqls } }}
     </div>
   </div>
-  <div class="metric" fxFlex.gt-xs="30%">
-    <fa-icon
-      class="metric__icon num-fc--a"
-      [icon]="['far', 'hospital']"
-      [fixedWidth]="true"
-    ></fa-icon>
-    <div class="metric__text" data-test="metrics__organizations">
-      {{ 'DASHBOARD.METRICS.ORGANIZATIONS' | translate: { count: metrics.organizations } }}
-    </div>
-  </div>
 </div>

@@ -12,8 +12,7 @@
     },
     "METRICS": {
       "PROJECTS": "{{count}} Projekte veröffentlicht",
-      "QUERIES": "{{count}} Kriterien verfügbar",
-      "ORGANIZATIONS": "{{count}} teilnehmende Universitätskliniken"
+      "QUERIES": "{{count}} Kriterien verfügbar"
     }
   },
   "LANGUAGE": {
