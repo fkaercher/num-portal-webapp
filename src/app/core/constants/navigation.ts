@@ -144,16 +144,15 @@ export const mainNavItems: INavItem[] = [
     ],
   },
 ]
-export const mainNavItemsExternal: INavItem[] = [
+export const mainNavItemsExternal: INavItem[] = []
+
+export const secondaryNavItemsLoggedIn: INavItem[] = [
   {
     icon: 'book-open',
     translationKey: 'NAVIGATION.USER_MANUAL',
     id: USERMANUAL,
     isExternal: true,
   },
-]
-
-export const secondaryNavItemsLoggedIn: INavItem[] = [
   {
     routeTo: 'profile',
     icon: 'user-circle',
