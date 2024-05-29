@@ -6,7 +6,6 @@ import { ContentService } from 'src/app/core/services/content/content.service'
 import { AvailableRoles } from 'src/app/shared/models/available-roles.enum'
 import { IDashboardCard } from 'src/app/shared/models/content/dashboard-card.interface'
 import { AppConfigService } from '../../../../config/app-config.service'
-import { INITIATIVE_CLINICS_LOGOS, LOGOS_BASE_URL, PARTICIPANT_CLINICS_LOGOS } from './constants'
 
 @Component({
   selector: 'num-dashboard',
@@ -24,9 +23,6 @@ export class DashboardComponent implements OnInit, OnDestroy {
   ) {}
 
   config = this.appConfig.config
-  participantLogosBaseUrl = LOGOS_BASE_URL
-  participantLogos = PARTICIPANT_CLINICS_LOGOS
-  initiativeLogos = INITIATIVE_CLINICS_LOGOS
   authTest: string
   cards: IDashboardCard[]
   displayLang: string
@@ -69,10 +65,5 @@ export class DashboardComponent implements OnInit, OnDestroy {
 
   getCurrentLang(): void {
     this.displayLang = this.translateService.currentLang as 'en' | 'de'
-  }
-
-  scrollToParticipants(): void {
-    const targetElement = this.participantsAnchor.nativeElement
-    targetElement.scrollIntoView({ behavior: 'smooth' })
   }
 }
