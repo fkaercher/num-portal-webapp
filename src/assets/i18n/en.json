@@ -12,8 +12,7 @@
     },
     "METRICS": {
       "PROJECTS": "{{count}} projects published ",
-      "QUERIES": "{{count}} criteria available",
-      "ORGANIZATIONS": "{{count}} participating university hospitals"
+      "QUERIES": "{{count}} criteria available"
     }
   },
   "LANGUAGE": {
