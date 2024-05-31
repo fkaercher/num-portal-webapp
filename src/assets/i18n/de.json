@@ -54,7 +54,6 @@
     "CONTENT_EDITOR": "Inhalts-Editor",
     "CONTENT_EDITOR_WELCOME_PAGE": "Willkommens-Seite",
     "CONTENT_EDITOR_NAVIGATION_ITEMS": "Navigation",
-    "MANAGER_TOOLS": "Manager Tools",
     "PROFILE": "Benutzerkonto",
     "SEARCH": "Suche",
     "SIGNOUT": "Abmelden",
@@ -81,12 +80,6 @@
     "ORGANIZATION": "Meine Organisation",
     "ALL": "Alle",
     "ARCHIVED": "Archiviert"
-  },
-  "MANAGER_TOOLS": {
-    "RESOLVE_PSEUDONYM": "Pseudonym auflösen",
-    "PROVIDE_INFO_TO_RESOLVE": "Bitte geben Sie die Projekt-Id und das Pseudonym ein",
-    "RESOLVE_PSEUDONYM_ERROR": "Kein Ergebnis für diese Kombination gefunden",
-    "COPY_CLIPBOARD_SUCCESS": "Patienten-Id wurde in die Zwischenablage kopiert"
   },
   "QUERIES": {
     "PARAMETER_ERROR": "Die Parameter dieses Kriteriums können nicht verwendet werden",

@@ -122,19 +122,6 @@ export const routes: Routes = [
       ).then((m) => m.ContentEditorModule),
   },
   {
-    path: 'manager-tools',
-    canLoad: [RoleGuard, AuthGuard],
-    data: {
-      navId: 'manager-tools',
-      roles: [AvailableRoles.Manager],
-      onlyApprovedUsers: true,
-    },
-    loadChildren: () =>
-      import(
-        /* webpackChunkName: "ManagerTools.Module" */ './modules/manager-tools/manager-tools.module'
-      ).then((m) => m.ManagerToolsModule),
-  },
-  {
     path: 'user-manual',
     resolve: { url: UserManualUrlResolver },
     canLoad: [RoleGuard],

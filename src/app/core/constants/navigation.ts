@@ -143,12 +143,6 @@ export const mainNavItems: INavItem[] = [
       },
     ],
   },
-  {
-    routeTo: 'manager-tools',
-    icon: 'chart-pie',
-    translationKey: 'NAVIGATION.MANAGER_TOOLS',
-    roles: [AvailableRoles.Manager],
-  },
 ]
 export const mainNavItemsExternal: INavItem[] = [
   {
