@@ -69,9 +69,6 @@ describe('AppLayoutComponent', () => {
     matchMedia: jest.fn().mockImplementation(() => mediaQueryList),
   } as unknown as MediaMatcher
 
-  @Component({ selector: 'num-footer', template: '' })
-  class FooterStubComponent {}
-
   @Component({
     selector: 'num-side-menu',
     template: '',
@@ -105,7 +102,6 @@ describe('AppLayoutComponent', () => {
         HeaderComponent,
         SideMenuComponentStub,
         LanguageComponent,
-        FooterStubComponent,
         HomeStubComponent,
       ],
       imports: [

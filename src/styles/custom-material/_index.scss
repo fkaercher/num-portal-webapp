@@ -9,7 +9,6 @@
 @import './styles/divider-classes.themed';
 @import './styles/mat-list.themed';
 @import './styles/general_table.themed';
-@import './styles/footer.themed';
 @import './styles/typography.themed';
 @import './styles/mat-chip.themed';
 @import './styles/mat-hint.themed';
@@ -29,7 +28,6 @@
   @include mat-list_themed($theme);
   @include language-component_themed($theme);
   @include general_table_themed($theme);
-  @include footer_themed($theme);
   @include typography_themed($theme);
   @include buttons($theme);
   @include mat-chip_themed($theme);
