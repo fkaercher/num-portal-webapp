@@ -54,7 +54,6 @@
     "CONTENT_EDITOR": "Content Editor",
     "CONTENT_EDITOR_WELCOME_PAGE": "Welcome Page",
     "CONTENT_EDITOR_NAVIGATION_ITEMS": "Navigation",
-    "MANAGER_TOOLS": "Manager Tools",
     "PROFILE": "User Account",
     "SEARCH": "Search",
     "SIGNOUT": "Sign out",
@@ -81,12 +80,6 @@
     "ORGANIZATION": "My organization",
     "ALL": "All",
     "ARCHIVED": "Archived"
-  },
-  "MANAGER_TOOLS": {
-    "RESOLVE_PSEUDONYM": "Resolve Pseudonym",
-    "PROVIDE_INFO_TO_RESOLVE": "Please provide the project-id and the pseudonym",
-    "RESOLVE_PSEUDONYM_ERROR": "No result for this combination found",
-    "COPY_CLIPBOARD_SUCCESS": "Copied patient-id to clipboard"
   },
   "QUERIES": {
     "PARAMETER_ERROR": "The parameters of this criterium are not usable",
@@ -519,17 +512,6 @@
       "TITLE": "Number of patients per institution",
       "XLABEL": "Clinic",
       "DROPDOWN": "Please select institution..."
-    },
-    "SOFA_SCORE": {
-      "TITLE": "Number of Patients per SOFA-Score (grouped)",
-      "XLABEL": "SOFA-Score",
-      "YLABEL": "Number of patients",
-      "DROPDOWN": "Please select clinic..."
-    },
-    "SOFA_SCORE_AVG": {
-      "TITLE": "Average SOFA-Score per Clinic",
-      "XLABEL": "Clinic",
-      "YLABEL": "Average SOFA-Score"
     }
   },
   "DATE_TIME": {
