@@ -143,13 +143,6 @@ export const routes: Routes = [
     },
     children: [],
   },
-  {
-    path: 'legal',
-    loadChildren: () =>
-      import(/* webpackChunkName: "Legal.Module" */ './modules/legal/legal.module').then(
-        (m) => m.LegalModule
-      ),
-  },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ]

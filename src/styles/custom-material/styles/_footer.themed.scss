@@ -1,8 +1,0 @@
-@mixin footer_themed($theme) {
-  $primary: map-get($theme, primary);
-
-  .num-footer {
-    background: mat-color($primary, 900);
-    color: mat-contrast($primary, 900);
-  }
-}
