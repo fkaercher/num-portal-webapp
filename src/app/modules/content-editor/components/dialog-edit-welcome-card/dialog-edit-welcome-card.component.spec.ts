@@ -34,7 +34,6 @@ describe('DialogEditWelcomeCardComponent', () => {
       bodyTextEnglish: new FormControl(),
       bodyTextGerman: new FormControl(),
       url: new FormControl(),
-      imageId: new FormControl(),
     })
 
     fixture.detectChanges()

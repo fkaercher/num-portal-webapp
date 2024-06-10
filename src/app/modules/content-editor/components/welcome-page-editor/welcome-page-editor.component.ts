@@ -6,7 +6,6 @@ import { IDashboardCard } from 'src/app/shared/models/content/dashboard-card.int
 import { CdkDragDrop } from '@angular/cdk/drag-drop'
 import { TranslateService } from '@ngx-translate/core'
 import { Subscription } from 'rxjs'
-import { DEFAULT_DASHBOARD_CARD_IMAGE } from 'src/app/shared/constants'
 import { DialogConfig } from 'src/app/shared/models/dialog/dialog-config.interface'
 import { ADD_DIALOG_CONFIG, SAVE_ERROR_CONFIG, SAVE_SUCCESS_CONFIG } from './constants'
 import { DialogService } from 'src/app/core/services/dialog/dialog.service'
@@ -96,7 +95,6 @@ export class WelcomePageEditorComponent implements OnInit, OnDestroy {
       bodyTextEnglish: [card?.en.text, [Validators.maxLength(130)]],
       bodyTextGerman: [card?.de.text, [Validators.maxLength(130)]],
       url: [card?.url, [Validators.pattern(urlRegex)]],
-      imageId: [card?.imageId || DEFAULT_DASHBOARD_CARD_IMAGE, [Validators.required]],
     })
   }
 
@@ -122,7 +120,6 @@ export class WelcomePageEditorComponent implements OnInit, OnDestroy {
     return this.dashboardCards.controls.reduce((validCards, control) => {
       if (control.valid) {
         validCards.push({
-          imageId: control.value.imageId,
           url: control.value.url,
           de: {
             title: control.value.titleGerman,

@@ -17,7 +17,6 @@ describe('WelcomePageItemComponent', () => {
   let fixture: ComponentFixture<WelcomePageItemComponent>
 
   const contentInitial = {
-    imageId: 'codex.jpg',
     url: 'url',
     de: {
       title: 'titleGerman',
@@ -68,7 +67,6 @@ describe('WelcomePageItemComponent', () => {
       bodyTextEnglish: new FormControl('bodyTextEnglish'),
       bodyTextGerman: new FormControl('bodyTextGerman'),
       url: new FormControl('url'),
-      imageId: new FormControl(),
     })
     fixture.detectChanges()
   })
@@ -108,14 +106,12 @@ describe('WelcomePageItemComponent', () => {
         bodyTextEnglish: new FormControl('newTextEn'),
         bodyTextGerman: new FormControl('newTextGer'),
         url: new FormControl('url/test'),
-        imageId: new FormControl('INFORMATION'),
       })
 
       component.editItem()
       afterClosedSubject$.next(form)
 
       expect(component.cardContent).toEqual({
-        imageId: 'information.jpg',
         url: 'url/test',
         de: {
           title: 'newTitleGer',
