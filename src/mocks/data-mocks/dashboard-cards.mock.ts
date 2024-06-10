@@ -2,7 +2,6 @@ import { IDashboardCard } from 'src/app/shared/models/content/dashboard-card.int
 
 export const mockDashboardCards: IDashboardCard[] = [
   {
-    imageId: 'CODEX',
     url: 'https://www.google.de/a-longer-link/test/this',
     de: {
       title: 'German Title 1',
@@ -14,7 +13,6 @@ export const mockDashboardCards: IDashboardCard[] = [
     },
   },
   {
-    imageId: 'INFORMATION',
     url: 'https://www.google.de',
     de: {
       title: 'German Title 2',
@@ -26,7 +24,6 @@ export const mockDashboardCards: IDashboardCard[] = [
     },
   },
   {
-    imageId: 'NEWS',
     url: 'https://www.google.de',
     de: {
       title: 'German Title 3',

@@ -14,13 +14,7 @@
     fxFlex.gt-xs="100%"
     [ngClass.xs]="{ 'card--mobile': true }"
   >
-    <div
-      class="card__image"
-      [ngStyle]="{
-        'background-image': 'url(assets/cards/' + cardContent.imageId + ')'
-      }"
-    ></div>
-    <section class="card__content" role="region" fxLayout="column">
+    <section class="card__content" role="region" fxLayout="column" fxFill>
       <div fxLayout="row" fxLayoutAlign="space-between">
         <span class="mat-body-strong">{{ cardContent[displayLang].title }}</span>
         <button
