@@ -22,9 +22,12 @@ export class AqlBuilderSelectItemComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.aliasForm = new UntypedFormGroup({
-      value: new UntypedFormControl(this.item.givenName),
+      value: new UntypedFormControl(
+        this.item.givenName || this.item.name.replace(/(^[^a-zA-Z]+)|[^0-9a-zA-Z_]+/g, '_')
+      ),
     })
 
+    this.handleAliasChange(this.aliasForm.get('value').value)
     this.subscriptions.add(
       this.aliasForm.get('value').valueChanges.subscribe((value) => this.handleAliasChange(value))
     )
