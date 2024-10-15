@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core'
 import { DirectivesModule } from '../shared/directives/directives.module'
 import { SharedComponentsModule } from '../shared/components/shared-components.module'
 import { CUSTOM_ICONS } from './custom-icons'
+import { FeatureIsActiveDirective } from '../shared/directives/feature-is-active.directive'
 
 const SHARED_MODULES = [MaterialModule, FlexLayoutModule, FontAwesomeModule]
 
@@ -25,6 +26,7 @@ const SHARED_MODULES = [MaterialModule, FlexLayoutModule, FontAwesomeModule]
     TranslateModule,
     DirectivesModule,
     SharedComponentsModule,
+    FeatureIsActiveDirective,
   ],
   exports: [...SHARED_MODULES, AppLayoutComponent],
 })

@@ -1,6 +1,7 @@
 import { AvailableRoles } from 'src/app/shared/models/available-roles.enum'
 import INavItem from '../../layout/models/nav-item.interface'
 import { USERMANUAL } from './constants'
+import { AvailableFeatures } from '../../shared/models/feature/available-features.enum'
 
 export const mainNavItems: INavItem[] = [
   {
@@ -12,6 +13,7 @@ export const mainNavItems: INavItem[] = [
     routeTo: 'search-with-aql',
     icon: 'search',
     translationKey: 'NAVIGATION.SEARCH_WITH_AQL',
+    feature: [AvailableFeatures.SearchWithAql],
   },
   {
     routeTo: 'search',
