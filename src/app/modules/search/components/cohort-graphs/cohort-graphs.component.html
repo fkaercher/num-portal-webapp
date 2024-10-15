@@ -16,14 +16,6 @@
     <mat-spinner *ngIf="isChartDataLoading" color="accent" [diameter]="24"></mat-spinner>
     <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutGap="32px" *ngIf="previewData.count > 0">
       <num-vertical-bar-chart
-        color="#5F0D22"
-        [data]="previewData.ages"
-        fxFlex="50%"
-        fxFlex.lt-lg="100%"
-        [graphName]="'CHARTS.COHORT_AGE.TITLE' | translate"
-        [xAxisName]="'CHARTS.COHORT_AGE.XLABEL' | translate"
-      ></num-vertical-bar-chart>
-      <num-vertical-bar-chart
         color="#EB586A"
         [data]="previewData.hospitals"
         fxFlex="50%"
