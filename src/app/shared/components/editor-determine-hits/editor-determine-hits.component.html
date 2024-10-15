@@ -31,7 +31,10 @@
   >
     <ng-container *ngIf="isButtonDisabled">{{ content?.defaultMessage | translate }}</ng-container>
     <ng-container
-      *ngIf="!isButtonDisabled && isCohortValid?.valid === true && isCohortValid?.hasAql === true"
+      *ngIf="
+        (!isButtonDisabled && isCohortValid === undefined) ||
+        (isCohortValid?.valid === true && isCohortValid?.hasAql === true)
+      "
       >{{ content?.message | translate }}</ng-container
     >
     <mat-hint class="parameter-error" *ngIf="isCohortValid?.hasAql === false">
