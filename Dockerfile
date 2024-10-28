@@ -5,7 +5,10 @@ WORKDIR $HOME
 RUN mkdir -p $HOME
 
 # Install gettext for envsubst
-RUN apk add -i gettext
+RUN apk add --no-cache --no-check-certificate gettext
+
+RUN npm config set proxy ${HTTP_PROXY}
+RUN npm config set https-proxy ${HTTPS_PROXY}
 
 ADD package.json $HOME
 ADD package-lock.json $HOME
