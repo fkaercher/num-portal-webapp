@@ -10,6 +10,12 @@ RUN apk add --no-cache --no-check-certificate gettext
 RUN npm config set proxy ${HTTP_PROXY}
 RUN npm config set https-proxy ${HTTPS_PROXY}
 
+# puppeteer dependencies
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+# gyp dependencies
+RUN apk add --no-cache --no-check-certificate python3 py3-pip make gcc g++
+RUN pip install setuptools --break-system-packages
+
 ADD package.json $HOME
 ADD package-lock.json $HOME
 RUN npm install
